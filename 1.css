@@ -1,0 +1,237 @@
+@font-face{
+    src:url(fonts/FuturaBoldfont.ttf);
+    font-family: futuraB;
+}
+@font-face{
+    src:url(fonts/FuturaHeavyfont.ttf);
+    font-family: futuraH;
+}
+@font-face{
+    src:url(fonts/Roboto-Regular.ttf);
+    font-family: roboto;
+}
+@font-face{
+    src:url(fonts/FuturaHeavyItalicfont.ttf);
+    font-family: futuraHI;
+}
+*{margin: 0; padding: 0;} 
+/* header */
+.menu-head p{
+    margin:0;
+}
+.header input::placeholder{
+    color: white!important;
+    font-size: 14px;
+	font-family: roboto;
+    padding:0px 7px;
+}
+.header img{
+	height: 30px;
+	margin-left: 7px;
+}
+.header p{
+	color: white;
+	font-size: 20px;
+	font-family: roboto;
+}
+
+/* menu */
+.menu a:hover{
+	text-decoration: none;
+	color: #a58a54;;
+}
+.menu h4{
+font-family: futuraB;
+font-weight: bold;
+color: #d6b571;
+font-size: 30px;
+}
+
+.menu h4:hover{
+	text-decoration: none;
+	color: #f9bf4a;
+}
+/* our-story */
+.our-story .btn{
+	color:white;
+	border-radius: 20px;
+	background-color: #d6b571;
+}
+.our-story .btn:hover{
+	background-color: #f9bf4a;
+}
+/* OUR COLLECTION */
+.our-collection p,h5{
+	font-family: roboto;
+}
+.our-collection .img{
+	width:100%;
+	height:300px;
+}
+.our-collection img{
+	width: 20%;
+}
+.our-collection .btn{
+	background-color: #d6b571;
+	color:white;
+	border-radius: 14px;
+}
+.our-collection .btn:hover{
+	background-color: #f9bf4a;
+}
+/* OUR COLLABORATION */
+.our-collaboration .image-border{
+	background-color: white;-webkit-box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.44);
+	-moz-box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.44);
+	box-shadow: 3px 4px 8px -1px rgba(0,0,0,0.44);
+}
+/* contact-us */
+.contact-us .btn{
+	background-color: #ddc189;
+	 color: white;
+	 border-radius: 14px;
+}
+.contact-us .btn:hover{
+	background-color: #f9bf4a;
+}
+/* FOOTER */
+.footer h3,h4{
+	color: white;
+	font-family: futuraB;
+}
+
+.footer p{
+	color: white;
+	font-family: roboto;
+}
+.footer .specs{
+	margin-bottom: 0;
+	margin-top: 3px;
+}
+
+/* --SLIDESHOW-- */* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-con {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	position: absolute;
+	top: 43%;
+	width: 50px;
+	height: 50px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: -50px;
+  }
+  .prev {
+	left: -50px;
+  }
+  /* On hover, dot change color */
+  .prev:hover {
+	content:url("images/buttonSlide1.png");
+  }
+  .next:hover{
+	content:url("images/buttonSlide3.png");
+  }
+  /* Caption text */
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  /* When hover, image up */
+.image-border:hover{
+	animation:up 1s forwards;
+}
+
+@-webkit-keyframes up{
+	from {transform: translateY(0);}
+	to {transform: translateY(-15%);}
+}
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	border: 1px solid #727272;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #727272;
+  }
+  
+  /* Fading animation */
+  .fades {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+/* RESPONSIVE */
+@media (max-width: 1200px) { 
+	 
+}
+@media (max-width: 992px) { 
+	.none576{
+		display: none!important;
+	}
+	.video{
+		width: 576px;
+	}
+}
+@media (max-width: 768px) { 
+	.none576{
+		display: none!important;
+	}
+	.video{
+		width: 576px;
+	}
+}
+@media (max-width: 576px) { 
+	 .none576{
+		 display: none!important;
+	 }
+	 .video{
+		 width: 576px;
+	 }
+}
